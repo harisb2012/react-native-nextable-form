@@ -1,0 +1,28 @@
+{
+  "name": "react-native-nextable-form",
+  "version": "0.0.1",
+  "description": "Highly customizable \"nextable\" forms for react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harisb2012/react-native-nextable-form.git"
+  },
+  "author": "harisb2012",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harisb2012/react-native-nextable-form/issues"
+  },
+  "homepage": "https://github.com/harisb2012/react-native-nextable-form#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-native": "^0.60.4"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.60.2",
+    "typescript": "^3.5.3"
+  }
+}
