@@ -2,7 +2,9 @@
 
 Wrapper for React Native forms for handling 'next' and 'done' buttons.
 
-![](demo.gif)
+<p align="center">
+  <img src="demo.gif" />
+</p>
 
 #### Why you might need this?
 
