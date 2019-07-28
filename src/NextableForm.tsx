@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput } from 'react-native';
 
-interface Props {
+export interface NextableFormProps {
   children: React.ReactChildren;
 
   /**
@@ -20,7 +20,7 @@ const NextableForm = ({
   children,
   onDone = () => {},
   inputComponentTypes = [TextInput],
-}: Props) => {
+}: NextableFormProps) => {
   const allInputs: Array<any> = [];
   const allRefs: { [key: number]: any } = {};
 
