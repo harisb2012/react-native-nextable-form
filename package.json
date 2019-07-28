@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prepublish": "tsc"
   },
   "repository": {
@@ -25,9 +25,45 @@
     "react": "*",
     "react-native": "*"
   },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.jest.json"
+      }
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|my-project|react-native-button)/)"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "setupFilesAfterEnv": ["./jest/setup.js"]
+
+  },
   "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
     "@types/react-native": "^0.60.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "jest-enzyme": "^7.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-native": "^0.60.4",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   }
 }
