@@ -34,7 +34,7 @@ test('renders form with TextInputs', () => {
 });
 
 test('renders form with custom components', () => {
-  const CustomInput = React.forwardRef(({ testID, ...props }: TextInputProps, ref) => {
+  const CustomInput = React.forwardRef(({ ...props }: TextInputProps, ref) => {
     return <TextInput ref={ref as any} {...props} />;
   });
 
@@ -42,24 +42,34 @@ test('renders form with custom components', () => {
     <NextableForm inputComponentTypes={[ CustomInput ]}>
       <CustomInput placeholder="Test" testID="first" />
       <CustomInput placeholder="Test 1" testID="second" />
+      <CustomInput placeholder="Test 2" testID="third" />
     </NextableForm>
   );
 
   const first = mounted
-    .find('CustomInput')
+    .find('TextInput')
     .findWhere(x => x.prop('testID') === 'first')
     .first()
     .props();
 
   const second = mounted
-    .find('CustomInput')
+    .find('TextInput')
     .findWhere(x => x.prop('testID') === 'second')
+    .first()
+    .props();
+
+  const third = mounted
+    .find('TextInput')
+    .findWhere(x => x.prop('testID') === 'third')
     .first()
     .props();
 
   expect(first.returnKeyType).toBe('next');
   expect(first.blurOnSubmit).toBe(false);
 
-  expect(second.returnKeyType).toBe('done');
-  expect(second.blurOnSubmit).toBe(true);
+  expect(second.returnKeyType).toBe('next');
+  expect(second.blurOnSubmit).toBe(false);
+
+  expect(third.returnKeyType).toBe('done');
+  expect(third.blurOnSubmit).toBe(true);
 });
