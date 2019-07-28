@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "prepublish": "tsc"
+    "prepublishbak": "tsc"
   },
   "repository": {
     "type": "git",
