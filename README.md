@@ -1,5 +1,7 @@
 # react-native-nextable-form
 
+![](https://travis-ci.com/harisb2012/react-native-nextable-form.svg?token=ReykppoYkJsKyTwd8HL2&branch=master)
+
 Wrapper for React Native forms for handling 'next' and 'done' buttons.
 
 <p align="center">
