@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { TextInput } from 'react-native';
 
 export interface NextableFormProps {
-  children: React.ReactChildren;
+  children: any;
 
   /**
    * Called when 'done' button was pressed on the last input
