@@ -88,3 +88,7 @@ dist
 
 # DynamoDB Local files
 .dynamodb/
+
+example/node_modules/**/*
+example/.expo/*
+example/npm-debug.*
