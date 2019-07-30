@@ -1,10 +1,10 @@
 {
   "name": "react-native-nextable-form",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Highly customizable \"nextable\" forms for React Native",
-  "main": "dist/index.js",
+  "main": "dist/src/index",
   "keywords": ["react-native", "react-native-form", "react native form", "react native next done"],
-  "types": "dist/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],
