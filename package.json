@@ -63,7 +63,7 @@
     "jest-enzyme": "^7.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-native": "^0.60.4",
+    "react-native": "^0.62.3",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   }
